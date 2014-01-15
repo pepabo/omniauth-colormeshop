@@ -1,6 +1,26 @@
-# Omniauth::Cmsp
+# OmniAuth::Cmsp
 
-TODO: Write a gem description
+OmniAuth strategy for [ColorMeShop API](http://shop-pro.jp/?mode=api).
+
+## Usage
+
+```ruby
+use OmniAuth::Builder do
+  provider :cmsp, ENV['CMSP_CONSUMER_KEY'], ENV['CMSP_CONSUMER_SECRET']
+end
+```
+
+### Scopes
+
+You can set scopes with `scope` option as below:
+
+```ruby
+use OmniAuth::Builder do
+  provider :cmsp, ENV['CMSP_CONSUMER_KEY'], ENV['CMSP_CONSUMER_SECRET'], {
+    scope: 'read_products write_products read_sales write_sales',
+  }
+end
+```
 
 ## Installation
 
@@ -15,10 +35,6 @@ And then execute:
 Or install it yourself as:
 
     $ gem install omniauth-cmsp
-
-## Usage
-
-TODO: Write usage instructions here
 
 ## Contributing
 
