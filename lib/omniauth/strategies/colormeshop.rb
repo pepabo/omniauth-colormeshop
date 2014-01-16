@@ -1,8 +1,8 @@
-require 'omniauth/strategies/oauth'
+require 'omniauth/strategies/oauth2'
 
 module OmniAuth
   module Strategies
-    class ColorMeShop < OmniAuth::Strategies::OAuth
+    class ColorMeShop < OmniAuth::Strategies::OAuth2
       option :name, 'colormeshop'
       option :client_options, {
         site:             'https://api.shop-pro.jp',
