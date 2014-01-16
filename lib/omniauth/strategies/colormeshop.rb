@@ -15,7 +15,7 @@ module OmniAuth
       extra    { { raw_info: raw_info } }
 
       def raw_info
-        @raw_info ||= access_token.get('https://api.shop-pro.jp/v1/shop.json').parsed
+        @raw_info ||= access_token.get('/v1/shop.json').parsed
       end
     end
   end
