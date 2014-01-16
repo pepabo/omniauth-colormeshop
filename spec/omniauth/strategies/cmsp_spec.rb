@@ -1,8 +1,8 @@
 require 'spec_helper'
 
-describe OmniAuth::Strategies::Cmsp do
+describe OmniAuth::Strategies::ColorMeShop do
   subject do
-    OmniAuth::Strategies::Cmsp.new({})
+    OmniAuth::Strategies::ColorMeShop.new({})
   end
 
   describe 'client options' do

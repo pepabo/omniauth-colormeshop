@@ -1,1 +1,1 @@
-require_relative '../lib/omniauth-cmsp'
+require_relative '../lib/omniauth-colormeshop'

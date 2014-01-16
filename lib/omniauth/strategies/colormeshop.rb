@@ -2,8 +2,8 @@ require 'omniauth/strategies/oauth'
 
 module OmniAuth
   module Strategies
-    class Cmsp < OmniAuth::Strategies::OAuth
-      option :name, 'cmsp'
+    class ColorMeShop < OmniAuth::Strategies::OAuth
+      option :name, 'colormeshop'
       option :client_options, {
         site:             'https://api.shop-pro.jp',
         authorize_url:    'https://api.shop-pro.jp/oauth/authorize',

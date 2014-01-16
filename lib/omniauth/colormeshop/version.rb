@@ -1,5 +1,5 @@
 module Omniauth
-  module Cmsp
+  module ColorMeShop
     VERSION = "0.0.1"
   end
 end
