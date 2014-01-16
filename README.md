@@ -6,7 +6,7 @@ OmniAuth strategy for [ColorMeShop API](http://shop-pro.jp/?mode=api).
 
 ```ruby
 use OmniAuth::Builder do
-  provider :colormeshop, ENV['COLORMESHOP_CONSUMER_KEY'], ENV['COLORMESHOP_CONSUMER_SECRET']
+  provider :colormeshop, ENV['COLORMESHOP_CLIENT_ID'], ENV['COLORMESHOP_CLIENT_SECRET']
 end
 ```
 
@@ -16,7 +16,7 @@ You can set scopes with `scope` option as below:
 
 ```ruby
 use OmniAuth::Builder do
-  provider :cmsp, ENV['COLORMESHOP_CONSUMER_KEY'], ENV['COLORMESHOP_CONSUMER_SECRET'], {
+  provider :cmsp, ENV['COLORMESHOP_CLIENT_ID'], ENV['COLORMESHOP_CLIENT_SECRET'], {
     scope: 'read_products write_products read_sales write_sales',
   }
 end
