@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Omniauth::ColorMeShop::VERSION
   spec.authors       = ['Kentaro Kuribayashi']
   spec.email         = ['kentarok@gmail.com']
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ''
+  spec.description   = %q{OmniAuth Strategy for ColorMeShop API}
+  spec.summary       = %q{OmniAuth Strategy for ColorMeShop API}
+  spec.homepage      = 'https://github.com/paperboy-cmsp/omniauth-colormeshop'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files`.split($/)
