@@ -4,8 +4,10 @@ OmniAuth strategy for [ColorMeShop API](http://shop-pro.jp/?mode=api).
 
 ## Usage
 
+With Rails, set your `client_id` and `client_secret` in `config/initializers/omniauth.rb` as below:
+
 ```ruby
-use OmniAuth::Builder do
+Rails.application.config.middleware.use OmniAuth::Builder do
   provider :colormeshop, ENV['COLORMESHOP_CLIENT_ID'], ENV['COLORMESHOP_CLIENT_SECRET']
 end
 ```
@@ -15,8 +17,8 @@ end
 You can set scopes with `scope` option as below:
 
 ```ruby
-use OmniAuth::Builder do
-  provider :cmsp, ENV['COLORMESHOP_CLIENT_ID'], ENV['COLORMESHOP_CLIENT_SECRET'], {
+Rails.application.config.middleware.use OmniAuth::Builder do
+  provider :colormeshop, ENV['COLORMESHOP_CLIENT_ID'], ENV['COLORMESHOP_CLIENT_SECRET'], {
     scope: 'read_products write_products read_sales write_sales',
   }
 end
