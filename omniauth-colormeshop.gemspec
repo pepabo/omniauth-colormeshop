@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ['kentarok@gmail.com']
   spec.description   = %q{OmniAuth Strategy for ColorMeShop API}
   spec.summary       = %q{OmniAuth Strategy for ColorMeShop API}
-  spec.homepage      = 'https://github.com/paperboy-cmsp/omniauth-colormeshop'
+  spec.homepage      = 'https://github.com/pepabo/omniauth-colormeshop'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files`.split($/)
