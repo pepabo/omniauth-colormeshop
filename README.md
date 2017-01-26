@@ -1,5 +1,7 @@
 # OmniAuth::ColorMeShop
 
+[![Build Status](https://travis-ci.org/pepabo/omniauth-colormeshop.svg?branch=master)](https://travis-ci.org/pepabo/omniauth-colormeshop)
+
 OmniAuth strategy for [ColorMeShop API](http://shop-pro.jp/?mode=api).
 
 ## Usage
